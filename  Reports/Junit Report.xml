@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite errors="0" failures="2" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="4" time="83.188">
+    <testcase classname="Validate OrangeHRM Login Functionality" name="Validate Login with valid credentials" time="47.378">
+        <system-out><![CDATA[Given User is on Login Page.................................................passed
+When User enters correct username...........................................passed
+And User enters correct password............................................passed
+Then User should be logged in successfully..................................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="Validate OrangeHRM Login Functionality" name="Validate Login with Invalid credentials" time="13.395">
+        <system-out><![CDATA[Given User is on Login Page.................................................passed
+When User enters incorrect username.........................................passed
+And User enters incorrect password..........................................passed
+Then User should not be allowed to logged in................................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="Validate OrangeHRM Login Functionality" name="Validate Login with multiple users" time="7.154">
+        <failure message="The scenario has pending or undefined step(s)" type="java.lang.Exception"><![CDATA[Given User is on Login Page.................................................passed
+When User enters username as  admin.........................................undefined
+And User enters password as admin123........................................skipped
+Then User should be logged in successfully..................................skipped
+]]></failure>
+    </testcase>
+    <testcase classname="Validate OrangeHRM Login Functionality" name="Validate Login with multiple users 2" time="14.775">
+        <failure message="The scenario has pending or undefined step(s)" type="java.lang.Exception"><![CDATA[Given User is on Login Page.................................................passed
+When User enters username as  tom...........................................undefined
+And User enters password as tom123..........................................skipped
+Then User should be logged in successfully..................................skipped
+]]></failure>
+    </testcase>
+</testsuite>
